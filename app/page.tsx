@@ -3,13 +3,9 @@ import React, { useReducer } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/header/Header";
-import Carousel from "./components/carousel/Carousel";
-import OurBusiness from "./components/our-business/OurBusiness";
-import CoreValues from "./components/core-values/CoreValues";
-import Services from "./components/services/Services";
+import Carousel from "./components/carousel/Carousel"; 
 import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
-import Clients from "./components/clients/Clients";
+import Footer from "./components/footer/Footer"; 
 import Tools from "./components/tools/Tools";
 
 // Definimos el reducer y el estado aquí en el archivo principal.

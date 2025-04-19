@@ -1,7 +1,9 @@
 .carousel-container {
     padding: 0;
     position: relative;
-
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    /* #000 */
+    background-color: #0a0a14;
 }
 
 .image-container {
@@ -9,7 +11,6 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
-
 }
 
 .custom-image {
@@ -161,4 +162,18 @@
     to {
         top: 0%;
     }
+}
+
+.video-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
 }

@@ -1,6 +1,6 @@
-:root {
-  /* Tema claro (Día) */
-  --level-1: #edfff5; /* Color más claro */
+/* :root {
+  
+  --level-1: #edfff5;  
   --level-2: #d5ffea;
   --level-3: #aeffd5;
   --level-4: #70ffb6;
@@ -10,9 +10,23 @@
   --level-8: #009648;
   --level-9: #06753d;
   --level-10: #076034;
-  --level-11: #00371b; /*  */ 
-}
+  --level-11: #00371b;  
+} */
 
+
+:root {
+  --level-1: #ffffff; /* Blanco puro */
+  --level-2: #f9f9f9;
+  --level-3: #efefef;
+  --level-4: #e2e2e2;
+  --level-5: #d4d4d4;
+  --level-6: #bdbdbd;
+  --level-7: #989898;
+  --level-8: #7c7c7c;
+  --level-9: #656565;
+  --level-10: #4a4a4a;
+  --level-11: #2f2f2f; /* Un gris oscuro, pero no negro */
+}
 
 [data-theme="dark"] {
   --level-1: #0a0a14;  /* Azul muy oscuro */

@@ -56,7 +56,8 @@ export default function Header({ state, dispatch, currentTranslation }: any) {
     const element = document.getElementById(id);
     if (element) {
       window.scrollTo({
-        top: element.offsetTop - 60,
+        // top: element.offsetTop - 60,
+        top: element.offsetTop - 30,
         behavior: 'smooth',
       });
       setOpen(false); // Cerrar el menú después de hacer clic en un ítem

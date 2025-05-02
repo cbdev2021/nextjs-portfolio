@@ -10,7 +10,9 @@
     height: 80vh;
     width: 100%;
     color: white;
-    margin-top: -80px;
+    /* margin-top: -80px; */
+    margin-top: -35px;
+ 
 }
 
 .tabs {
@@ -19,13 +21,15 @@
     margin-bottom: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    
+    /* z-index: 1; */
 }
 
 .tabs button {
     /* background: #1e293b;  */
     background: var(--level-7);
 
-    color: white; 
+    color: white;
     /* color: var(--level-11); */
 
 
@@ -109,41 +113,58 @@
     gap: 2rem;
     justify-content: center;
     padding: 1rem 0;
-  }
-  
-  .iconCard {
+}
+
+.iconGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.iconCard {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--level-12); /* o blanco si no tenés custom prop */
+    background-color: var(--level-12);
+    /* o blanco si no tenés custom prop */
     color: #fff;
+    /* padding: 1.6rem; */
     padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     /* width: 100px; */
-    width: 150px;
-    height: 150px;
-    transition: 
-                transform 0.2s ease,
-                box-shadow 0.5s ease;
-  }
-  
-  .iconCard:hover {
-    transform: scale(1.2);
+    width: 120px;
+    /* height: 120px; */
+    height: 160px;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.5s ease;
+}
+
+.iconCard:hover {
+    transform: scale(1.15);
     /* box-shadow: 2px 8px 12px rgba(226, 221, 221, 0.2); */
     box-shadow: 0px 10px 15px rgba(226, 221, 221, 0.2);
     /* box-shadow: 0px 10px 15px rgba(226, 221, 221, 0.35); */
 
-  }
-  
-  .iconImage {
-    width: 48px;
-    height: 48px;
+}
+
+.iconImage {
+    /* width: 48px;
+    height: 48px; */
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     margin-bottom: 0.5rem;
-  }
-  
-  .whiteFilter {
+}
+
+.whiteFilter {
     filter: brightness(0) invert(1);
-  }
-  
+}
+
+.titles {
+    display: flex;
+    justify-content: center;
+}

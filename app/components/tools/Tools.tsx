@@ -104,18 +104,18 @@ const contents = [
   [ // Testing & QA
     { name: "Postman", icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" },
     // { name: "Json", icon: "https://img.icons8.com/ios/50/json.png" },
-    
+
     { name: "Json", icon: "https://img.icons8.com/stickers/100/placeholder-thumbnail-json-1.png" },
 
     // { name: "XML", icon: "https://img.icons8.com/external-bearicons-detailed-outline-bearicons/64/external-XML-file-extension-bearicons-detailed-outline-bearicons.png" },
-    
+
     { name: "XML", icon: "https://img.icons8.com/external-fauzidea-flat-fauzidea/64/external-xml-file-file-extension-fauzidea-flat-fauzidea.png" },
 
     // { name: "Testing", icon: "https://img.icons8.com/dotty/80/test.png" }, 
     { name: "Testing", icon: "https://img.icons8.com/arcade/64/test.png" },
- 
+
     // { name: "Planning", icon: "https://img.icons8.com/ios/50/strategy-board.png" },
-    
+
     { name: "Planning", icon: "https://img.icons8.com/color/48/strategy-board.png" },
   ],
   [ // Herramientas
@@ -127,7 +127,7 @@ const contents = [
     { name: "Oracle PL", icon: "https://img.icons8.com/plasticine/100/oracle-pl-sql--v3.png" },
     // { name: "MyBatis", icon: "https://img.icons8.com/ios/50/mybatis.png" },
     { name: "MyBatis", icon: " https://img.icons8.com/ultraviolet/40/mybatis.png" },
-    
+
 
   ]
 ];
@@ -259,13 +259,10 @@ export default function Tools() {
               background: `linear-gradient(135deg, ${levelColors[index % 7]}, #888)`,
               color: 'var(--level-11)'
             }}
-            
-            
-            
-
-
           >
-            <h2>{titles[index]}</h2>
+            {/* <h2>{titles[index]}</h2> */}
+            <h2 className={styles.titles}>{titles[index]}</h2>
+
             {/* <ul>
               {content.map((item, i) => (
                 <li key={i}>{item}</li>
@@ -285,7 +282,7 @@ export default function Tools() {
               {content.map((item, i) => (
                 <div key={i} className={styles.iconCard}>
                   <img src={item.icon} alt={item.name} className={styles.iconImage} />
-                  
+
                   {/* <img
                     src={item.icon}
                     alt={item.name}

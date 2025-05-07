@@ -16,6 +16,7 @@
 .title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    color: var(--level-11);
 }
 
 /* .grid {
@@ -104,6 +105,7 @@
 
 .info {
     padding: 1rem;
+    color: var(--level-11);
 }
 
 .info h2 {
@@ -114,5 +116,6 @@
 .info p {
     margin: 0;
     font-size: 1rem;
-    color: #ddd;
+    /* color: #ddd; */
+    color: var(--level-11);
 }

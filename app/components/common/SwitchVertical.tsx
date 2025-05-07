@@ -7,7 +7,7 @@ interface SwitchVerticalProps {
 }
 
 // const SwitchVertical = ({ isChecked: any, handleToggle, type, mode, language }) => {
- 
+
 const SwitchVertical: React.FC<SwitchVerticalProps> = ({ isChecked, handleToggle, type, mode, language }) => {
 
   // Determinar el color del switch según el tipo (modo de color o idioma)
@@ -16,9 +16,34 @@ const SwitchVertical: React.FC<SwitchVerticalProps> = ({ isChecked, handleToggle
     : (type === 'color' ? '#00C058' : '#0000ff'); // Modo claro (☾) o Inglés (Azul claro)
 
   // Determinar qué ícono o texto mostrar en función del `mode` o `language`
+  // const switchLabel = type === 'color'
+  //   ? (mode === 'light' ? '🌣' : '☾')  // Modo de color, muestra 🌣 o ☾
+  //   : (language === 'EN' ? 'en' : 'es'); // Modo de idioma, muestra EN o ES
+
+  // const switchLabel = type === 'color'
+  //   ? (mode === 'light'
+  //     ? <img src="https://img.icons8.com/carbon-copy/100/summer.png" alt="sun icon" style={{ width: '20px', height: '20px' }} />
+  //     : <img src="https://img.icons8.com/carbon-copy/100/crescent-moon.png" alt="moon icon" style={{ width: '20px', height: '20px' }} />
+  //   )  // Modo de color, muestra el ícono de sol o luna
+  //   : (language === 'EN' ? 'EN' : 'ES'); // Modo de idioma, muestra EN o ES
+
+  // const switchLabel = type === 'color'
+  //   ? (mode === 'light' 
+  //       ? <img src="https://img.icons8.com/ios-filled/100/ffffff/summer.png" alt="sun icon" style={{ width: '15px', height: '15px' }} />
+  //       : <img src="https://img.icons8.com/ios-filled/100/ffffff/crescent-moon.png" alt="moon icon" style={{ width: '15px', height: '15px' }} />
+  //     )  // Modo de color, muestra el ícono de sol o luna en blanco
+  //   : (language === 'EN' ? 'EN' : 'ES'); // Modo de idioma, muestra EN o ES
+
   const switchLabel = type === 'color'
-    ? (mode === 'light' ? '🌣' : '☾')  // Modo de color, muestra 🌣 o ☾
-    : (language === 'EN' ? 'en' : 'es'); // Modo de idioma, muestra EN o ES
+    ? (mode === 'light'
+      ? <img src="https://img.icons8.com/ios-filled/100/ffffff/summer.png" alt="sun icon" style={{ width: '15px', height: '15px' }} />
+      : <img src="https://img.icons8.com/ios-filled/100/ffffff/crescent-moon.png" alt="moon icon" style={{ width: '15px', height: '15px' }} />
+    )  // Modo de color, muestra el ícono de sol o luna en blanco
+    : (language === 'EN'
+      ? <span style={{ color: 'white', fontWeight: 'bold', fontSize: '12px' }}>EN</span>
+      : <span style={{ color: 'white', fontWeight: 'bold', fontSize: '12px' }}>ES</span>
+    );  // Modo de idioma, muestra EN o ES en blanco
+
 
   return (
     <div>
@@ -62,4 +87,3 @@ const SwitchVertical: React.FC<SwitchVerticalProps> = ({ isChecked, handleToggle
 };
 
 export default SwitchVertical;
- 

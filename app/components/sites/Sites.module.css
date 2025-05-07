@@ -1,0 +1,118 @@
+.container {
+    /* background: linear-gradient(to right, var(--level-3), var(--level-5)); */
+    background: linear-gradient(to right, var(--level-4), var(--level-7));
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 80vh; */
+    width: 100%;
+    color: white;
+    margin-top: -20px;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+} */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    perspective: 1000px;
+    /* Habilita efecto 3D */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    transform-origin: center center;
+    /* Centrado completamente */
+    /* height: 400px; */
+}
+
+.card:hover {
+    transform: rotateX(15deg) translateZ(-10px);
+    /* 👈 Inclinación hacia atrás */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    perspective: 1000px;
+    /* 👈 Esto permite el efecto 3D */
+}
+
+
+.imageWrapper {
+    width: 100%;
+    /* height: 180px; */
+    height: 400px;
+    overflow: hidden;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card:hover .imageWrapper img {
+    transform: scale(1.05);
+}
+
+.info {
+    padding: 1rem;
+}
+
+.info h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+}
+
+.info p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ddd;
+}

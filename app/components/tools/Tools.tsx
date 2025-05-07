@@ -32,7 +32,6 @@ const titles = [
 
 const contents = [
   [ // UX/UI
-
     { name: "Flexbox", icon: "https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/external-images-collage-modern-design-template-grids-layout-grid-filled-tal-revivo.png" },
     { name: "Bootstrap", icon: "https://img.icons8.com/ios-filled/50/bootstrap.png" },
     { name: "Material UI", icon: "https://img.icons8.com/color/48/material-ui.png" },
@@ -221,6 +220,10 @@ export default function Tools() {
 
   return (
     <div className={styles.container}>
+      <div>
+        <h3 className={styles.mainTitle}>Tools</h3>
+      </div>
+
       <div
         className={styles.tabs}
         onMouseEnter={() => setHovering(true)}

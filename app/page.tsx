@@ -3,10 +3,11 @@ import React, { useReducer } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/header/Header";
-import Carousel from "./components/carousel/Carousel"; 
+import Carousel from "./components/carousel/Carousel";
 import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer"; 
+import Footer from "./components/footer/Footer";
 import Tools from "./components/tools/Tools";
+import Sites from "./components/sites/Sites";
 
 // Definimos el reducer y el estado aquí en el archivo principal.
 const initialState = {
@@ -73,11 +74,22 @@ export default function Home() {
       />
       <div id="home">
         <Carousel />
-      </div> 
+      </div>
       <div id="ourbusiness">
-        <Tools  />
-      </div>  
-  
+        <Tools />
+      </div>
+
+      <div id="sites">
+        {/* <Sites  /> */}
+        {/* <Sites currentTranslation={currentTranslation} language={state.language} /> */}
+
+        <Sites
+          currentTranslation={currentTranslation}
+          language={state.language as 'ES' | 'EN'}
+        />
+
+      </div>
+
       <div id="contact">
         <Contact />
       </div>

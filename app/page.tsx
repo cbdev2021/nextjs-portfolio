@@ -84,7 +84,7 @@ export default function Home() {
         {/* <Sites currentTranslation={currentTranslation} language={state.language} /> */}
 
         <Sites
-          currentTranslation={currentTranslation}
+          // currentTranslation={currentTranslation}
           language={state.language as 'ES' | 'EN'}
         />
 

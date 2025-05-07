@@ -16,7 +16,7 @@ interface SiteItem {
 
 interface SitesProps {
   language: Language;
-  currentTranslation?: Translation; // Si lo querés opcional
+//   currentTranslation?: Translation; 
 }
 
 export default function Sites({ language }: SitesProps) {
@@ -47,7 +47,7 @@ export default function Sites({ language }: SitesProps) {
     },
     {
       name: {
-        ES: "Landing Page",
+        ES: "Landing pagina",
         EN: "Landing Page"
       },
       desc: {
@@ -59,7 +59,7 @@ export default function Sites({ language }: SitesProps) {
     },
     {
       name: {
-        ES: "Dashboard",
+        ES: "Dashboard español",
         EN: "Dashboard"
       },
       desc: {
@@ -71,7 +71,7 @@ export default function Sites({ language }: SitesProps) {
     },
     {
       name: {
-        ES: "Landing Page",
+        ES: "Landing Pagina",
         EN: "Landing Page"
       },
       desc: {
@@ -83,7 +83,7 @@ export default function Sites({ language }: SitesProps) {
     },
     {
       name: {
-        ES: "Dashboard",
+        ES: "Dashboard es",
         EN: "Dashboard"
       },
       desc: {

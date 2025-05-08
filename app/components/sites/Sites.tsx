@@ -30,7 +30,7 @@ export default function Sites({ language }: SitesProps) {
           "ES": "Aplicación web desarrollada con React.js que muestra integración avanzada con APIs externas. Presenta información meteorológica en tiempo real, incluyendo temperatura, humedad y pronóstico extendido. Al cargar el sitio desde la ruta raíz, se detecta el país y región del usuario mediante el uso de APIs, ofreciendo la interfaz y los datos en español para países hispanohablantes y en inglés para el resto del mundo. Cuenta con un menú desplegable para continente, país y sus ciudades. Se integran diversas herramientas de optimización SEO como React Helmet para la gestión de metadatos y keywords, Google Analytics para seguimiento de tráfico, Google Search Console para indexación y Google reCAPTCHA para seguridad en formularios. Además, cuenta con una sección de contacto conectada a un correo corporativo (temperaturein@temperaturein.com), así como páginas de políticas de privacidad y términos de uso.",
           "EN": "Web application developed with React.js showcasing advanced integration with external APIs. It displays real-time weather information, including temperature, humidity, and extended forecasts. When the site is accessed from the root path, it detects the user's country and region using APIs, presenting the interface and data in Spanish for Spanish-speaking countries and in English for the rest of the world. It features a dropdown menu for continent, country, and corresponding cities. Several SEO optimization tools are integrated, such as React Helmet for metadata and keyword management, Google Analytics for traffic tracking, Google Search Console for indexing, and Google reCAPTCHA for form security. Additionally, it includes a contact section connected to a corporate email (temperaturein@temperaturein.com), as well as pages for Privacy Policy and Terms of Use."
         },
-        "image": "https://via.placeholder.com/300x200?text=Blog",
+        "image": "/pic01.jpg",
         "url": "https://temperaturein.com"
       },
       {
@@ -42,7 +42,7 @@ export default function Sites({ language }: SitesProps) {
           "ES": "Sitio web estático diseñado para una consultora ficticia del sector tecnológico. Desarrollado utilizando HTML5, CSS3 y JavaScript, con enfoque en diseño responsivo y experiencia de usuario fluida mediante efecto de smooth scrolling. Incluye secciones institucionales típicas como 'About Us', 'Services', 'Clients' y 'Contact', presentadas bajo un diseño limpio, profesional y adaptado a distintos dispositivos. Esta demo ilustra cómo presentar contenido corporativo de forma eficiente y visualmente atractiva.",
           "EN": "Static website designed for a fictional tech consulting firm. Developed using HTML5, CSS3, and JavaScript, with a focus on responsive design and smooth user experience through smooth scrolling effects. It includes typical institutional sections such as 'About Us', 'Services', 'Clients', and 'Contact', all presented with a clean, professional layout adapted to various devices. This demo illustrates how to present corporate content effectively and in a visually appealing manner."
         },
-        "image": "https://via.placeholder.com/300x200?text=Tienda",
+        "image": "/pic02.jpg",
         "url": "https://nextjsstaticsite.vercel.app/"
       },      
       {
@@ -54,7 +54,7 @@ export default function Sites({ language }: SitesProps) {
           "ES": "Aplicación web desarrollada para simular un proceso de compra completo en una tienda online, desde la selección del producto hasta la confirmación del pedido. Implementada como una solución Full Stack utilizando React.js para el frontend y consumo de APIs externas para obtener un catálogo de productos dinámico desde el backend. El flujo de compra incluye: selección de producto, asignación de cantidad, inicio del proceso de compra con stepper que guía al usuario por las etapas de registro, entrega, pago y generación de número de orden. Esta demo demuestra un flujo funcional común en plataformas e-commerce modernas.",
           "EN": "Web application developed to simulate a complete purchasing process in an online store, from product selection to order confirmation. Implemented as a Full Stack solution using React.js for the frontend and external API consumption for a dynamic product catalog from the backend. The purchase flow includes: product selection, quantity assignment, and a checkout process guided by a stepper interface through the stages of registration, delivery, payment, and order number generation. This demo showcases a functional flow commonly found in modern e-commerce platforms."
         },
-        "image": "https://via.placeholder.com/300x200?text=Landing",
+        "image": "/pic03.jpg",
         "url": "https://ecm-f1.vercel.app/"
       }
       ,
@@ -67,14 +67,14 @@ export default function Sites({ language }: SitesProps) {
           "ES": "Aplicación web genérica para gestión de inventarios en pymes. Frontend en React y backend principal en NodeJS/MongoDB. También incluye versiones backend con SpringBoot/MongoDB y NodeJS/MySQL (disponibles en GitHub). Funcionalidades generales: registro de productos, control de stock, reportes en tiempo real. Usuarios: registro, login, logout y edición de usuario con JWT. Reportes: resumen de ganancias y ventas por año (en Home), gráficos mensuales de compras, ventas y ganancias por producto. Inventario: registro, edición y eliminación por producto. Facturación: registro, lectura, edición, emisión y eliminación de facturas. Campos: idFactura, fecha, proveedor/consumidor, forma de pago, búsqueda y lista de productos (editable antes de emisión).",
           "EN": "Generic web application for inventory management in small and medium-sized businesses. Frontend built with React, and main backend in NodeJS/MongoDB. Also includes backend versions with SpringBoot/MongoDB and NodeJS/MySQL (available on GitHub). General features: product registration, stock control, and real-time reports. Users: registration, login, logout, and user editing with JWT. Reports: annual summary of profits and sales (on Home), monthly charts of purchases, sales, and profits by product. Inventory: registration, editing, and deletion by product. Billing: registration, viewing, editing, issuance, and deletion of invoices. Fields: invoice ID, date, supplier/customer, payment method, product search and list (editable before issuance)."
         },
-        "image": "https://via.placeholder.com/300x200?text=Dashboard",
+        "image": "/pic04.jpg",
         "url": "https://inv-f1.vercel.app/login"
       }      
   ];
 
   const sectionTitle: Record<Language, string> = {
-    ES: "Mis Proyectos",
-    EN: "My Projects"
+    ES: "Proyectos",
+    EN: "Projects"
   };
 
   return (

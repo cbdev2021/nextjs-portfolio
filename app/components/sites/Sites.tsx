@@ -197,6 +197,8 @@ export default function Sites({ language }: SitesProps) {
             target="_blank"
             rel="noopener noreferrer"
             className={styles.card}
+
+            onContextMenu={(e) => e.preventDefault()}
           >
             <div className={styles.imageWrapper}>
               <img src={site.image} alt={site.name[language]} />

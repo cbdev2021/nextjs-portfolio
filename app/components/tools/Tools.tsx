@@ -60,7 +60,10 @@ const contents = [
     { name: "Nextjs", icon: "https://img.icons8.com/color/48/nextjs.png" },
     { name: "Typescript", icon: "https://img.icons8.com/color/48/typescript.png" },
 
-    { name: "Redux", icon: "https://img.icons8.com/external-tal-revivo-duo-tal-revivo/25/external-redux-an-open-source-javascript-library-for-managing-application-state-logo-duo-tal-revivo.png" },
+    // { name: "Redux", icon: "https://img.icons8.com/external-tal-revivo-duo-tal-revivo/25/external-redux-an-open-source-javascript-library-for-managing-application-state-logo-duo-tal-revivo.png" },
+    { name: "Redux", icon: "https://img.icons8.com/ios/48/redux.png" },
+
+    
     // { name: "", icon: "" },
     // { name: "", icon: "" },
 

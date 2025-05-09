@@ -46,7 +46,6 @@ const contents = [
 
     { name: "Analytics", icon: "https://img.icons8.com/color/48/google-analytics.png" },
     // { name: "", icon: "" },
-    // { name: "", icon: "" },
 
   ],
   [ // Frontend
@@ -56,9 +55,12 @@ const contents = [
     { name: "React", icon: "https://img.icons8.com/officel/80/react.png" },
     { name: "Angular", icon: "https://img.icons8.com/fluency/48/angularjs.png" },
     { name: "JWT ", icon: "https://img.icons8.com/color/48/java-web-token.png" },
-    // { name: "", icon: "" },
-    // { name: "", icon: "" },
-    // { name: "", icon: "" },
+
+    { name: "vite", icon: "https://img.icons8.com/color/48/vite.png" },
+    { name: "Nextjs", icon: "https://img.icons8.com/color/48/nextjs.png" },
+    { name: "Typescript", icon: "https://img.icons8.com/color/48/typescript.png" },
+
+    { name: "Redux", icon: "https://img.icons8.com/external-tal-revivo-duo-tal-revivo/25/external-redux-an-open-source-javascript-library-for-managing-application-state-logo-duo-tal-revivo.png" },
     // { name: "", icon: "" },
     // { name: "", icon: "" },
 

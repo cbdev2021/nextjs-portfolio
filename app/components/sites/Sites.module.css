@@ -124,3 +124,11 @@
     /* color: #ddd; */
     color: var(--level-11);
 }
+
+.iconsList {
+    display: flex;
+    flex-direction: row;
+    padding: 10px !important;
+    flex-wrap: wrap;
+    background: var(--level-6);
+}

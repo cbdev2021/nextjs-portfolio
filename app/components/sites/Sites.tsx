@@ -77,6 +77,115 @@ export default function Sites({ language }: SitesProps) {
     EN: "Projects"
   };
 
+
+  const contents = [
+    [ // UX/UI
+      { name: "Flexbox", icon: "https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/external-images-collage-modern-design-template-grids-layout-grid-filled-tal-revivo.png" },
+      { name: "Bootstrap", icon: "https://img.icons8.com/ios-filled/50/bootstrap.png" },
+      { name: "Material UI", icon: "https://img.icons8.com/color/48/material-ui.png" },
+      // { name: "Responsive", icon: "https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/50/external-responsive-web-hosting-xnimrodx-lineal-xnimrodx.png" },
+  
+      { name: "Responsive", icon: "https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-responsive-design-new-media-flaticons-lineal-color-flat-icons-2.png" },
+  
+  
+      // { name: "SEO", icon: "https://img.icons8.com/external-line-vectorslab/68/external-Seo-Analysis-web-and-seo-line-vectorslab-2.png" },
+  
+      { name: "SEO", icon: "https://img.icons8.com/external-smashingstocks-outline-color-smashing-stocks/66/external-SEO-seo-and-development-smashingstocks-outline-color-smashing-stocks-2.png" },
+  
+      { name: "Analytics", icon: "https://img.icons8.com/color/48/google-analytics.png" },
+      // { name: "", icon: "" },
+      // { name: "", icon: "" },
+  
+    ],
+    [ // Frontend
+      { name: "HTML", icon: "https://img.icons8.com/plasticine/48/html-5.png" },
+      { name: "CSS", icon: "https://img.icons8.com/color/48/css3.png" },
+      { name: "JavaScript", icon: "https://img.icons8.com/color/48/javascript--v1.png" },
+      { name: "React", icon: "https://img.icons8.com/officel/48/react.png" },
+      { name: "Angular", icon: "https://img.icons8.com/fluency/48/angularjs.png" },
+      { name: "JWT ", icon: "https://img.icons8.com/color/48/java-web-token.png" },
+
+      { name: "vite", icon: "https://img.icons8.com/color/48/vite.png" },
+      { name: "Nextjs", icon: "https://img.icons8.com/color/48/nextjs.png" },
+      { name: "Typescript", icon: "https://img.icons8.com/color/48/typescript.png" },
+      { name: "Redux", icon: "https://img.icons8.com/external-tal-revivo-duo-tal-revivo/25/external-redux-an-open-source-javascript-library-for-managing-application-state-logo-duo-tal-revivo.png" },
+
+
+      // { name: "", icon: "" },
+      // { name: "", icon: "" },
+      // { name: "", icon: "" },
+      // { name: "", icon: "" },
+      // { name: "", icon: "" },
+  
+    ],
+    [ // Backend
+      { name: "Node", icon: "https://img.icons8.com/color/48/nodejs.png" },
+      { name: "Spring Boot", icon: "https://img.icons8.com/officel/48/spring-logo.png" },
+      { name: "Java EE", icon: "https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" },
+      // { name: "REST", icon: "https://img.icons8.com/ios/48/api-settings.png" },    
+      { name: "REST", icon: "https://img.icons8.com/water-color/48/api-settings.png" },
+  
+      // { name: "express", icon: "https://img.icons8.com/ios/48/express-js.png" },
+      { name: "express", icon: "https://img.icons8.com/fluency/48/mysql-logo.png" },
+  
+    ],
+    [ // Data Base
+      // { name: "MySql", icon: "https://img.icons8.com/ios/48/mysql-logo.png" },es 
+      { name: "MySql", icon: "https://img.icons8.com/fluency/48/mysql-logo.png" },
+      { name: "MongoDB", icon: "https://img.icons8.com/color/48/mongodb.png" },
+      { name: "PostgreSQL", icon: "https://img.icons8.com/ios/48/postgreesql.png" },
+      { name: "Oracle", icon: "https://img.icons8.com/ios/48/oracle-logo.png" },
+      { name: "PL/SQL", icon: "https://img.icons8.com/plasticine/48/oracle-pl-sql--v3.png" },
+      { name: "mongoose", icon: "https://img.icons8.com/color/48/mongoose.png" },
+      { name: "Hibernate", icon: "https://cdn.worldvectorlogo.com/logos/hibernate.svg" },
+    ],
+    [ // DevOps & Workflow
+      // { name: "Git", icon: "https://img.icons8.com/ios-filled/50/github.png" },
+  
+      { name: "Git", icon: " https://img.icons8.com/plasticine/48/github.png" },
+  
+      { name: "GitLab", icon: "https://img.icons8.com/color/48/gitlab.png" },
+      { name: "Bitbucket", icon: "https://img.icons8.com/color/48/bitbucket.png" },
+      // { name: "Jenkins", icon: "https://img.icons8.com/ios-filled/48/jenkins.png" },
+  
+      { name: "Jenkins", icon: "https://img.icons8.com/color/48/jenkins.png" },
+  
+      { name: "AWS", icon: "https://img.icons8.com/color/48/amazon-web-services.png" },
+      { name: "Kubernetes ", icon: "https://img.icons8.com/color/48/kubernetes.png" },
+      { name: "Jira", icon: "https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/external-jira-a-proprietary-issue-tracking-product-developed-by-atlassian-that-allows-bug-tracking-logo-shadow-tal-revivo.png" },
+      // { name: "", icon: "" },
+    ],
+    [ // Testing & QA
+      { name: "Postman", icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png" },
+      // { name: "Json", icon: "https://img.icons8.com/ios/48/json.png" },
+  
+      { name: "Json", icon: "https://img.icons8.com/stickers/48/placeholder-thumbnail-json-1.png" },
+  
+      // { name: "XML", icon: "https://img.icons8.com/external-bearicons-detailed-outline-bearicons/48/external-XML-file-extension-bearicons-detailed-outline-bearicons.png" },
+  
+      { name: "XML", icon: "https://img.icons8.com/external-fauzidea-flat-fauzidea/64/external-xml-file-file-extension-fauzidea-flat-fauzidea.png" },
+  
+      // { name: "Testing", icon: "https://img.icons8.com/dotty/48/test.png" }, 
+      { name: "Testing", icon: "https://img.icons8.com/arcade/48/test.png" },
+  
+      // { name: "Planning", icon: "https://img.icons8.com/ios/48/strategy-board.png" },
+  
+      { name: "Planning", icon: "https://img.icons8.com/color/48/strategy-board.png" },
+    ],
+    [ // Herramientas
+  
+      { name: "VS Code", icon: "https://img.icons8.com/plasticine/48/visual-studio-code-2019.png" },
+      { name: "IntelliJ", icon: "https://img.icons8.com/color/48/intellij-idea.png" },
+      { name: "eclipse ", icon: "https://img.icons8.com/ios-filled/48/java-eclipse.png" },
+      { name: "DBeaver ", icon: "https://img.icons8.com/dusk/48/dbeaver.png" },
+      { name: "Oracle PL", icon: "https://img.icons8.com/plasticine/48/oracle-pl-sql--v3.png" },
+      // { name: "MyBatis", icon: "https://img.icons8.com/ios/48/mybatis.png" },
+      { name: "MyBatis", icon: " https://img.icons8.com/ultraviolet/48/mybatis.png" },
+  
+  
+    ]
+  ];
+
   return (
     <section className={styles.container}>
       <h1 className={styles.title}>{sectionTitle[language]}</h1>
@@ -92,6 +201,81 @@ export default function Sites({ language }: SitesProps) {
             <div className={styles.imageWrapper}>
               <img src={site.image} alt={site.name[language]} />
             </div>
+
+            <div  >
+                {index === 0 ? 
+                        <div className={styles.iconsList}>
+                             <img src={contents[1][0].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][1].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][2].icon}  className={styles.iconImage} /> 
+                             <img src={contents[0][2].icon}  className={styles.iconImage} />
+
+                             <img src={contents[1][6].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][3].icon}  className={styles.iconImage} />   
+                             
+                             <img src={contents[1][8].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][9].icon}  className={styles.iconImage} /> 
+                        </div>
+                    : " "
+                }  
+
+
+                {index === 1 ? 
+                        <div className={styles.iconsList}>
+                             <img src={contents[1][0].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][1].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][2].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][3].icon}  className={styles.iconImage} />   
+                             {/* <img src={contents[1][6].icon}  className={styles.iconImage} />  */}
+                             <img src={contents[1][7].icon}  className={styles.iconImage} /> 
+                        </div>
+                    : " "}    
+
+                {index === 2 ? 
+                        <div className={styles.iconsList}>
+                             <img src={contents[1][0].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][1].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][2].icon}  className={styles.iconImage} /> 
+                             <img src={contents[0][2].icon}  className={styles.iconImage} />
+                             
+                             <img src={contents[1][6].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][3].icon}  className={styles.iconImage} />   
+                             
+                             <img src={contents[1][8].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][9].icon}  className={styles.iconImage} /> 
+                        </div>
+                    : " "
+                }  
+
+                {index === 3 ? 
+                        <div className={styles.iconsList}>
+                             <img src={contents[1][0].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][1].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][2].icon}  className={styles.iconImage} /> 
+                             <img src={contents[0][2].icon}  className={styles.iconImage} />                             
+                             <img src={contents[1][6].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][3].icon}  className={styles.iconImage} /> 
+                             <img src={contents[1][8].icon}  className={styles.iconImage} /> 
+                             {/* <img src={contents[1][9].icon}  className={styles.iconImage} />  */}
+
+                            {/* <img src={contents[2][3].icon}  className={styles.iconImage} />  */}
+
+                            <img src={contents[2][0].icon}  className={styles.iconImage} />  
+                            <img src={contents[3][1].icon}  className={styles.iconImage} /> 
+
+                        
+                            <img src={contents[2][1].icon}  className={styles.iconImage} />  
+                            <img src={contents[3][1].icon}  className={styles.iconImage} /> 
+
+                            <img src={contents[2][0].icon}  className={styles.iconImage} />  
+                            <img src={contents[3][0].icon}  className={styles.iconImage} /> 
+     
+                        </div>
+                    : " "
+                }  
+
+            </div>
+
             <div className={styles.info}>
               <h2>{site.name[language]}</h2>
               <p>{site.desc[language]}</p>

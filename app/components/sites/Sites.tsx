@@ -108,10 +108,10 @@ export default function Sites({ language }: SitesProps) {
       { name: "vite", icon: "https://img.icons8.com/color/48/vite.png" },
       { name: "Nextjs", icon: "https://img.icons8.com/color/48/nextjs.png" },
       { name: "Typescript", icon: "https://img.icons8.com/color/48/typescript.png" },
-      { name: "Redux", icon: "https://img.icons8.com/external-tal-revivo-duo-tal-revivo/25/external-redux-an-open-source-javascript-library-for-managing-application-state-logo-duo-tal-revivo.png" },
+      { name: "Redux", icon: "https://img.icons8.com/ios/48/redux.png" },
 
 
-      // { name: "", icon: "" },
+        { name: "vertical-line", icon: "https://img.icons8.com/ios/50/vertical-line.png" },
       // { name: "", icon: "" },
       // { name: "", icon: "" },
       // { name: "", icon: "" },
@@ -126,7 +126,7 @@ export default function Sites({ language }: SitesProps) {
       { name: "REST", icon: "https://img.icons8.com/water-color/48/api-settings.png" },
   
       // { name: "express", icon: "https://img.icons8.com/ios/48/express-js.png" },
-      { name: "express", icon: "https://img.icons8.com/fluency/48/mysql-logo.png" },
+      { name: "express", icon: "https://img.icons8.com/officel/48/express-js.png" },
   
     ],
     [ // Data Base
@@ -259,16 +259,20 @@ export default function Sites({ language }: SitesProps) {
                              {/* <img src={contents[1][9].icon}  className={styles.iconImage} />  */}
 
                             {/* <img src={contents[2][3].icon}  className={styles.iconImage} />  */}
-
+                            <img src={contents[1][10].icon}  className={styles.iconImage} /> 
+ 
                             <img src={contents[2][0].icon}  className={styles.iconImage} />  
                             <img src={contents[3][1].icon}  className={styles.iconImage} /> 
+                            <img src={contents[1][5].icon}  className={styles.iconImage} />
+                            <img src={contents[3][5].icon}  className={styles.iconImage} />
+                            <img src={contents[2][4].icon}  className={styles.iconImage} />
 
                         
-                            <img src={contents[2][1].icon}  className={styles.iconImage} />  
+                            {/* <img src={contents[2][1].icon}  className={styles.iconImage} />  
                             <img src={contents[3][1].icon}  className={styles.iconImage} /> 
 
                             <img src={contents[2][0].icon}  className={styles.iconImage} />  
-                            <img src={contents[3][0].icon}  className={styles.iconImage} /> 
+                            <img src={contents[3][0].icon}  className={styles.iconImage} />  */}
      
                         </div>
                     : " "

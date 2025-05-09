@@ -131,4 +131,51 @@
     padding: 10px !important;
     flex-wrap: wrap;
     background: var(--level-6);
+    width: 500px;
+    gap: 10px;
 }
+
+/* .iconsWrapper {
+    width: 500px;
+    overflow: hidden;
+    background: var(--level-6);
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    gap: 10px;
+  } */
+
+
+
+  .iconsList {
+    display: flex;
+    flex-direction: row;
+    padding: 10px !important;
+    flex-wrap: wrap;
+    /* background: var(--level-6); */
+    width: 1150px;
+    gap: 40px;
+    background:unset;
+}
+  
+  .iconsList {
+    display: flex;
+    animation: scrollIcons 20s linear infinite;
+  }
+  
+  .icon {
+    min-width: 50px;
+    margin-right: 20px;
+    font-size: 30px;
+    
+  }
+  
+  @keyframes scrollIcons {
+    0% {
+      transform: translateX(40%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

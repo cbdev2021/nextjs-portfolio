@@ -105,9 +105,9 @@ export default function Header({ state, dispatch, currentTranslation }: any) {
           <div className={styles['a-item']} onClick={() => scrollToSection('services')}>
             {currentTranslation.services}
           </div>
-          <div className={styles['a-item']} onClick={() => scrollToSection('clients')}>
+          {/* <div className={styles['a-item']} onClick={() => scrollToSection('clients')}>
             {currentTranslation.clients}
-          </div>
+          </div> */}
           <div className={styles['a-item']} onClick={() => scrollToSection('contact')}>
             {currentTranslation.contact}
           </div>

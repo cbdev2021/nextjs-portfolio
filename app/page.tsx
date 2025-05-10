@@ -44,8 +44,9 @@ export default function Home() {
   const translations = {
     EN: {
       home: 'Home',
-      aboutUs: 'About Us',
-      services: 'Services',
+      // aboutUs: 'About Us',
+      aboutUs: 'Tech Stack',
+      services: 'Projects',
       clients: 'Clients',
       contact: 'Contact',
       colorMode: 'Color Mode',
@@ -53,8 +54,8 @@ export default function Home() {
     },
     ES: {
       home: 'Inicio',
-      aboutUs: 'Nosotros',
-      services: 'Servicios',
+      aboutUs: 'Stack Tecnológico',
+      services: 'Proyectos',
       clients: 'Clientes',
       contact: 'Contacto',
       colorMode: 'Modo de Color',
@@ -79,7 +80,7 @@ export default function Home() {
         <Tools />
       </div>
 
-      <div id="sites">
+      <div id="services">
         {/* <Sites  /> */}
         {/* <Sites currentTranslation={currentTranslation} language={state.language} /> */}
 

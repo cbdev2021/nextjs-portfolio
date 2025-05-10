@@ -226,7 +226,7 @@ export default function Tools() {
   return (
     <div className={styles.container}>
       <div>
-        <h3 className={styles.mainTitle}>Tools</h3>
+        <h3 className={styles.mainTitle}>Tech Stack</h3>
       </div>
 
       <div

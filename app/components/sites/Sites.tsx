@@ -198,7 +198,7 @@ export default function Sites({ language }: SitesProps) {
             rel="noopener noreferrer"
             className={styles.card}
 
-            onContextMenu={(e) => e.preventDefault()}
+            // onContextMenu={(e) => e.preventDefault()}}
           >
             <div className={styles.imageWrapper}>
               <img src={site.image} alt={site.name[language]} />
@@ -279,11 +279,71 @@ export default function Sites({ language }: SitesProps) {
                         </div>
                     : " "
                 }  
-
             </div>
 
             <div className={styles.info}>
-              <h2>{site.name[language]}</h2>
+              {/* <h2>{site.name[language]}</h2> */}
+              <h2>{site.name[language]} 
+                  {/* <img src={contents[4][0].icon}  className={styles.iconImage} />   */}
+                  {/* {index} */}
+
+                  {index === 0 ? 
+                    <span>
+                      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                        <img src={contents[4][0].icon} className={styles.iconFront} />
+                      </a>
+
+                    {/* <a
+                      href="https://google.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}
+                    >
+                      <img src={contents[4][0].icon} className={styles.iconFront} />
+                      <span style={{ fontSize: '0.5em', marginTop: '-7px', marginLeft: '10px' }}>front</span>
+                    </a>
+  */}
+                        <img src={contents[1][10].icon}  className={styles.iconVertical} />  
+                      <a href="https://google.mx" target="_blank" rel="noopener noreferrer">
+                        <img src={contents[4][0].icon}  className={styles.iconBack} /> 
+                      </a>
+                    </span>
+                    : " "
+                  }  
+
+                  {index === 1 ? 
+                    <span>
+                      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                        <img src={contents[4][0].icon} className={styles.iconFront} />
+                      </a>              
+                    </span>
+                    : " "
+                  }     
+
+                  {index === 2 ? 
+                    <span>
+                      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                        <img src={contents[4][0].icon} className={styles.iconFront} />
+                      </a>              
+                    </span>
+                    : " "
+                  }     
+
+                  {index === 3 ? 
+                    <span>
+                      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                        <img src={contents[4][0].icon} className={styles.iconFront} />
+                      </a>              
+                        <img src={contents[1][10].icon}  className={styles.iconVertical} />  
+                      <a href="https://google.mx" target="_blank" rel="noopener noreferrer">
+                        <img src={contents[4][0].icon}  className={styles.iconBack} /> 
+                      </a>
+                    </span>
+                    : " "
+                  }  
+              
+              </h2>
+              
               <p>{site.desc[language]}</p>
             </div>
           </a>

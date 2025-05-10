@@ -179,3 +179,21 @@
     }
   }
   
+
+  .iconFront {
+    margin-right: -10px;
+    font-size: 30px; 
+    width: 35px;
+  }
+
+  .iconVertical {
+    margin-right: -10px;
+    font-size: 30px; 
+    width: 35px;
+  }
+
+  .iconBack {
+    margin-right: 20px;
+    font-size: 30px; 
+    width: 35px;
+  }

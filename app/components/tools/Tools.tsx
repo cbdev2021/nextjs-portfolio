@@ -136,7 +136,7 @@ const contents = [
   ]
 ];
 
-export default function Tools() {
+export default function Tools({ language }: { language: string }) {
   const [current, setCurrent] = useState(0);
   const [hovering, setHovering] = useState(false);
   const stackRef = useRef<HTMLDivElement>(null);
@@ -223,10 +223,22 @@ export default function Tools() {
 
   ];
 
+  const translations = {
+    EN: {
+      tittle: "Tech Stack", 
+    },
+    ES: {
+      tittle: "Stack Tecnológico", 
+    }
+  };
+
+  const currentTranslation = translations[language as 'EN' | 'ES'];
+
   return (
     <div className={styles.container}>
       <div>
-        <h3 className={styles.mainTitle}>Tech Stack</h3>
+        {/* <h3 className={styles.mainTitle}>Tech Stack</h3> */}
+        <h3 className={styles.mainTitle}>{currentTranslation.tittle}</h3>
       </div>
 
       <div

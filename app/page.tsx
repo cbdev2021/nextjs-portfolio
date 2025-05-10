@@ -77,7 +77,7 @@ export default function Home() {
         <Carousel />
       </div>
       <div id="ourbusiness">
-        <Tools />
+        <Tools language={state.language}/>
       </div>
 
       <div id="services">

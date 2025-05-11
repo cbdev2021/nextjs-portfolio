@@ -461,6 +461,34 @@ export default function Sites({ language }: SitesProps) {
                                       <span>back</span> 
                                   </div>
                                 </div> 
+                                <div > 
+                                  <div> 
+                                          <img
+                                            src={contents[4][0].icon}
+                                            className={styles.iconFront}
+                                            onClick={() => window.open("https://google.com", "_blank")}
+                                            style={{ cursor: "pointer" }}
+                                            alt="Front"
+                                          />  
+                                  </div>
+                                  <div className={styles.frontDiv}> 
+                                      <span>vers2</span> 
+                                  </div>
+                                </div>
+                                <div > 
+                                  <div> 
+                                          <img
+                                            src={contents[4][0].icon}
+                                            className={styles.iconFront}
+                                            onClick={() => window.open("https://google.com", "_blank")}
+                                            style={{ cursor: "pointer" }}
+                                            alt="Front"
+                                          />  
+                                  </div>
+                                  <div className={styles.frontDiv}> 
+                                      <span>vers3</span> 
+                                  </div>
+                                </div>
                         </div>
                      )}
                     </div>

@@ -147,7 +147,7 @@
 
 
 
-  .iconsList {
+.iconsList {
     display: flex;
     flex-direction: row;
     padding: 10px !important;
@@ -155,45 +155,61 @@
     /* background: var(--level-6); */
     width: 1150px;
     gap: 40px;
-    background:unset;
+    background: unset;
 }
-  
-  .iconsList {
+
+.iconsList {
     display: flex;
     animation: scrollIcons 20s linear infinite;
-  }
-  
-  .icon {
+}
+
+.icon {
     min-width: 50px;
     margin-right: 20px;
     font-size: 30px;
-    
-  }
-  
-  @keyframes scrollIcons {
+
+}
+
+@keyframes scrollIcons {
     0% {
-      transform: translateX(40%);
+        transform: translateX(40%);
     }
+
     100% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
-  }
-  
+}
 
-  .iconFront {
-    margin-right: -10px;
-    font-size: 30px; 
+/* evaluar eliminar */
+.iconFront {
+    /* margin-right: -10px; */
+    font-size: 30px;
     width: 35px;
-  }
+}
 
-  .iconVertical {
-    margin-right: -10px;
-    font-size: 30px; 
+.iconVertical {
+    /* margin-right: -10px; */
+    font-size: 30px;
     width: 35px;
-  }
+}
 
-  .iconBack {
-    margin-right: 20px;
-    font-size: 30px; 
+.iconBack {
+    /* margin-right: 20px; */
+    font-size: 30px;
     width: 35px;
-  }
+}
+
+.titleContainer {
+    display: flex;
+}
+
+.siteName {
+    width: 50%;
+}
+
+.gitHub {
+    width: 50%;
+    margin-top: -15px;
+    display: flex;
+    justify-content: end;
+}

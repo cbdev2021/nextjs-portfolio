@@ -283,67 +283,88 @@ export default function Sites({ language }: SitesProps) {
 
             <div className={styles.info}>
               {/* <h2>{site.name[language]}</h2> */}
-              <h2>{site.name[language]} 
-                  {/* <img src={contents[4][0].icon}  className={styles.iconImage} />   */}
-                  {/* {index} */}
+              <div className={styles.titleContainer} >
+                <div className={styles.siteName} ><h2>{site.name[language]} </h2></div>
+                <div className={styles.gitHub}>
+                      {index === 0 && (
+                        <span>
+                          <img
+                            src={contents[4][0].icon}
+                            className={styles.iconFront}
+                            onClick={() => window.open("https://google.com", "_blank")}
+                            style={{ cursor: "pointer" }}
+                            alt="Front"
+                          />
 
-                  {index === 0 ? 
-                    <span>
-                      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-                        <img src={contents[4][0].icon} className={styles.iconFront} />
-                      </a>
+                          <img
+                            src={contents[1][10].icon}
+                            className={styles.iconVertical}
+                            alt="Separator"
+                          />
 
-                    {/* <a
-                      href="https://google.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ display: 'inline-flex', flexDirection: 'column', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}
-                    >
-                      <img src={contents[4][0].icon} className={styles.iconFront} />
-                      <span style={{ fontSize: '0.5em', marginTop: '-7px', marginLeft: '10px' }}>front</span>
-                    </a>
-  */}
-                        <img src={contents[1][10].icon}  className={styles.iconVertical} />  
-                      <a href="https://google.mx" target="_blank" rel="noopener noreferrer">
-                        <img src={contents[4][0].icon}  className={styles.iconBack} /> 
-                      </a>
-                    </span>
-                    : " "
-                  }  
+                          <img
+                            src={contents[4][0].icon}
+                            className={styles.iconBack}
+                            onClick={() => window.open("https://google.mx", "_blank")}
+                            style={{ cursor: "pointer" }}
+                            alt="Back"
+                          />
+                        </span>
+                      )}
 
-                  {index === 1 ? 
-                    <span>
-                      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-                        <img src={contents[4][0].icon} className={styles.iconFront} />
-                      </a>              
-                    </span>
-                    : " "
-                  }     
+                      {index === 1 && (
+                        <span>
+                          <img
+                            src={contents[4][0].icon}
+                            className={styles.iconFront}
+                            onClick={() => window.open("https://google.com", "_blank")}
+                            style={{ cursor: "pointer" }}
+                            alt="Front"
+                          />
+                        </span>
+                      )}
 
-                  {index === 2 ? 
-                    <span>
-                      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-                        <img src={contents[4][0].icon} className={styles.iconFront} />
-                      </a>              
-                    </span>
-                    : " "
-                  }     
+                      {index === 2 && (
+                        <span>
+                          <img
+                            src={contents[4][0].icon}
+                            className={styles.iconFront}
+                            onClick={() => window.open("https://google.com", "_blank")}
+                            style={{ cursor: "pointer" }}
+                            alt="Front"
+                          />
+                        </span>
+                      )}
 
-                  {index === 3 ? 
-                    <span>
-                      <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-                        <img src={contents[4][0].icon} className={styles.iconFront} />
-                      </a>              
-                        <img src={contents[1][10].icon}  className={styles.iconVertical} />  
-                      <a href="https://google.mx" target="_blank" rel="noopener noreferrer">
-                        <img src={contents[4][0].icon}  className={styles.iconBack} /> 
-                      </a>
-                    </span>
-                    : " "
-                  }  
-              
-              </h2>
-              
+                      {index === 3 && (
+                        <span>
+                          <img
+                            src={contents[4][0].icon}
+                            className={styles.iconFront}
+                            onClick={() => window.open("https://google.com", "_blank")}
+                            style={{ cursor: "pointer" }}
+                            alt="Front"
+                          />
+
+                          <img
+                            src={contents[1][10].icon}
+                            className={styles.iconVertical}
+                            alt="Separator"
+                          />
+
+                          <img
+                            src={contents[4][0].icon}
+                            className={styles.iconBack}
+                            onClick={() => window.open("https://google.mx", "_blank")}
+                            style={{ cursor: "pointer" }}
+                            alt="Back"
+                          />
+                        </span>
+                      )}
+                    </div>
+
+                </div>
+  
               <p>{site.desc[language]}</p>
             </div>
           </a>

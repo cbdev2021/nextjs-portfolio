@@ -286,31 +286,65 @@ export default function Sites({ language }: SitesProps) {
               <div className={styles.titleContainer} >
                 <div className={styles.siteName} ><h2>{site.name[language]} </h2></div>
                 <div className={styles.gitHub}>
-                      {index === 0 && (
-                        <span>
+                {index === 0 && (
+                        <div className={styles.gitHubSub}>
+                          {/* <span>front</span>
                           <img
                             src={contents[4][0].icon}
                             className={styles.iconFront}
                             onClick={() => window.open("https://google.com", "_blank")}
                             style={{ cursor: "pointer" }}
                             alt="Front"
-                          />
+                          /> */}
+                          <div> 
+                                  <div> 
+                                          <img
+                                            src={contents[4][0].icon}
+                                            className={styles.iconFront}
+                                            onClick={() => window.open("https://google.com", "_blank")}
+                                            style={{ cursor: "pointer" }}
+                                            alt="Front"
+                                          />  
+                                  </div>
+                                  <div className={styles.frontDiv}> 
+                                      <span>front</span> 
+                                  </div>
+                          </div>
 
-                          <img
+                          <div>
+                            <img
                             src={contents[1][10].icon}
                             className={styles.iconVertical}
                             alt="Separator"
-                          />
+                            />
+                          </div>
 
-                          <img
-                            src={contents[4][0].icon}
-                            className={styles.iconBack}
-                            onClick={() => window.open("https://google.mx", "_blank")}
-                            style={{ cursor: "pointer" }}
-                            alt="Back"
-                          />
-                        </span>
-                      )}
+                                            {/* <div>
+                                                <img
+                                                  src={contents[4][0].icon}
+                                                  className={styles.iconBack}
+                                                  onClick={() => window.open("https://google.mx", "_blank")}
+                                                  style={{ cursor: "pointer" }}
+                                                  alt="Back"
+                                                /> 
+                                            </div> */}
+
+                                <div > 
+                                  <div> 
+                                          <img
+                                            src={contents[4][0].icon}
+                                            className={styles.iconFront}
+                                            onClick={() => window.open("https://google.com", "_blank")}
+                                            style={{ cursor: "pointer" }}
+                                            alt="Front"
+                                          />  
+                                  </div>
+                                  <div className={styles.frontDiv}> 
+                                      <span>back</span> 
+                                  </div>
+                                </div> 
+                        </div>
+                     )}
 
                       {index === 1 && (
                         <span>

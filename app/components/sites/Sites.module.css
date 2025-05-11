@@ -199,6 +199,15 @@
     width: 35px;
 }
 
+
+.frontDiv{
+    font-size: 0.7rem;
+    /* margin: auto; */
+    margin-top: -8px;;
+    margin-left: 6px;
+}
+
+
 .titleContainer {
     display: flex;
 }
@@ -212,4 +221,8 @@
     margin-top: -15px;
     display: flex;
     justify-content: end;
+}
+
+.gitHubSub{
+    display: flex;
 }

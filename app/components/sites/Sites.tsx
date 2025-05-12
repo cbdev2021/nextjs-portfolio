@@ -64,8 +64,8 @@ export default function Sites({ language }: SitesProps) {
           "EN": "INV"
         },
         "desc": {
-          "ES": "Aplicación web genérica para gestión de inventarios en pymes. Frontend en React y backend principal en NodeJS/MongoDB. También incluye versiones backend con SpringBoot/MongoDB y NodeJS/MySQL (disponibles en GitHub). Funcionalidades generales: registro de productos, control de stock, reportes en tiempo real. Usuarios: registro, login, logout y edición de usuario con JWT. Reportes: resumen de ganancias y ventas por año (en Home), gráficos mensuales de compras, ventas y ganancias por producto. Inventario: registro, edición y eliminación por producto. Facturación: registro, lectura, edición, emisión y eliminación de facturas. Campos: idFactura, fecha, proveedor/consumidor, forma de pago, búsqueda y lista de productos (editable antes de emisión).",
-          "EN": "Generic web application for inventory management in small and medium-sized businesses. Frontend built with React, and main backend in NodeJS/MongoDB. Also includes backend versions with SpringBoot/MongoDB and NodeJS/MySQL (available on GitHub). General features: product registration, stock control, and real-time reports. Users: registration, login, logout, and user editing with JWT. Reports: annual summary of profits and sales (on Home), monthly charts of purchases, sales, and profits by product. Inventory: registration, editing, and deletion by product. Billing: registration, viewing, editing, issuance, and deletion of invoices. Fields: invoice ID, date, supplier/customer, payment method, product search and list (editable before issuance)."
+          "ES": "Aplicación web genérica y escalable para gestión de inventarios. Frontend en React y backend principal en NodeJS/MongoDB. También incluye versiones backend con SpringBoot/MongoDB y NodeJS/MySQL (disponibles en GitHub). Funcionalidades generales: registro de productos, control de stock, reportes en tiempo real. Usuarios: registro, login, logout y edición de usuario con JWT. Reportes: resumen de ganancias y ventas por año (en Home), gráficos mensuales de compras, ventas y ganancias por producto. Inventario: registro, edición y eliminación por producto. Facturación: registro, lectura, edición, emisión y eliminación de facturas. Campos: idFactura, fecha, proveedor/consumidor, forma de pago, búsqueda y lista de productos (editable antes de emisión).",
+          "EN": "Generic and scalable web application for inventory management. Frontend built with React, and main backend in NodeJS/MongoDB. Also includes backend versions with SpringBoot/MongoDB and NodeJS/MySQL (available on GitHub). General features: product registration, stock control, and real-time reports. Users: registration, login, logout, and user editing with JWT. Reports: annual summary of profits and sales (on Home), monthly charts of purchases, sales, and profits by product. Inventory: registration, editing, and deletion by product. Billing: registration, viewing, editing, issuance, and deletion of invoices. Fields: invoice ID, date, supplier/customer, payment method, product search and list (editable before issuance)."
         },
         "image": "/pic04.jpg",
         "url": "https://inv-f1.vercel.app/login"
@@ -188,7 +188,7 @@ export default function Sites({ language }: SitesProps) {
 
   return (
     <section className={styles.container}>
-      <h1 className={styles.title}>{sectionTitle[language]}</h1>
+      <h2 className={styles.title}>{sectionTitle[language]}</h2>
       <div className={styles.grid}>
         {sitesList.map((site, index) => (
           <a

@@ -238,7 +238,7 @@ export default function Tools({ language }: { language: string }) {
     <div className={styles.container}>
       <div>
         {/* <h3 className={styles.mainTitle}>Tech Stack</h3> */}
-        <h3 className={styles.mainTitle}>{currentTranslation.tittle}</h3>
+        <h2 className={styles.mainTitle}>{currentTranslation.tittle}</h2>
       </div>
 
       <div
